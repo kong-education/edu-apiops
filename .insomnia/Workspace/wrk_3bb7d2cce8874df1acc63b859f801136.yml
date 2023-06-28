@@ -1,0 +1,17 @@
+_id: wrk_3bb7d2cce8874df1acc63b859f801136
+type: Workspace
+parentId: null
+modified: 1671104657957
+created: 1671035425453
+name: Transactions API of BanKonG 1.2.0
+description: >
+  This API provides you access to the transactions of a logged in user. You can
+  get, create, change and delete transactions (of course always depending on
+  permissions).
+
+
+  :closed_lock_with_key: this api is protected by either OpenID Connect or api-key
+
+
+  :bulb: this API is rate limited
+scope: design

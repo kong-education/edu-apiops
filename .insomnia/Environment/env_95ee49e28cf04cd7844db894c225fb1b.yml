@@ -1,0 +1,22 @@
+_id: env_95ee49e28cf04cd7844db894c225fb1b
+type: Environment
+parentId: env_6314879a72bad3aae58da44d2b79e6baf276045e
+modified: 1671035675874
+created: 1671035647746
+name: localdev
+data:
+  scheme: http
+  apikey: apikey
+  base_path: ""
+  host: localhost:3000
+  id: 143aadce-f995-4503-ba6e-01ed01c6af88
+dataPropertyOrder:
+  "&":
+    - scheme
+    - apikey
+    - base_path
+    - host
+    - id
+color: null
+isPrivate: false
+metaSortKey: 1671035424423

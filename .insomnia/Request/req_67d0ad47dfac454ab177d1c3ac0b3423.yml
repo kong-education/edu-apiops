@@ -1,0 +1,26 @@
+_id: req_67d0ad47dfac454ab177d1c3ac0b3423
+type: Request
+parentId: fld_e3c2ed2a77364b4c812893cc7c9631f7
+modified: 1687789621113
+created: 1687789621113
+url: "{{ _.base_url }}/transactions"
+name: Create new transaction
+description: ""
+method: POST
+body:
+  mimeType: application/json; charset=utf-8
+parameters: []
+headers: []
+authentication:
+  type: apikey
+  key: apikey
+  value: "{{ _.apikey }}"
+  addTo: header
+metaSortKey: -1687789621113
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

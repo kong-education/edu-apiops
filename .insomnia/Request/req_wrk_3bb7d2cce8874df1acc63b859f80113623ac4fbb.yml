@@ -1,0 +1,25 @@
+_id: req_wrk_3bb7d2cce8874df1acc63b859f80113623ac4fbb
+type: Request
+parentId: wrk_3bb7d2cce8874df1acc63b859f801136
+modified: 1671035424348
+created: 1671035424348
+url: "{{ base_url }}/transactions/{{ id }}"
+name: Cancel a transaction
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: apikey
+  key: apikey
+  value: "{{ apikey }}"
+  addTo: header
+metaSortKey: -1671035424348
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

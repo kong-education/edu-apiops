@@ -1,0 +1,25 @@
+_id: req_wrk_3bb7d2cce8874df1acc63b859f801136bac61fd8
+type: Request
+parentId: wrk_3bb7d2cce8874df1acc63b859f801136
+modified: 1671035424369
+created: 1671035424369
+url: "{{ base_url }}/transactions"
+name: List all transactions
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: apikey
+  key: apikey
+  value: "{{ apikey }}"
+  addTo: header
+metaSortKey: -1671035424369
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

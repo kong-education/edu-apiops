@@ -1,0 +1,34 @@
+_id: req_aff22b43eaaf44528d264b0b781cc445
+type: Request
+parentId: wrk_3bb7d2cce8874df1acc63b859f801136
+modified: 1671036338417
+created: 1671036282497
+url: "{{ base_url }}/transactions/{{ id }} "
+name: Update a transaction
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    	{
+    		"source": "DE8412325587359375895",
+    		"senderName": "Max Mustermann",
+    		"destination": "GR872659435350353",
+    		"amount": 10.2,
+    		"currency": "STG",
+    		"subject": "The money we have talked about",
+    		"id": "b88f7029-fa93-41a5-9462-4884e544bf63"
+    	}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1671036282497
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,25 @@
+_id: req_b069441b08574a8fabc27610ce2ebd77
+type: Request
+parentId: fld_2d9a1652cfbe49bda06f565066de2701
+modified: 1687785029504
+created: 1687785029504
+url: "{{ _.base_url }}/transactions"
+name: List all transactions
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: apikey
+  key: apikey
+  value: "{{ _.apikey }}"
+  addTo: header
+metaSortKey: -1687785029504
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
