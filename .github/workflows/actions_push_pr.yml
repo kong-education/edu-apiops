@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - main
-
+      
 jobs:
   deploy_to_kong:
     runs-on: self-hosted
@@ -13,12 +13,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Lint OpenAPI Specification
-        run: inso lint spec spc_23d31c --ci
+        run: inso lint spec openapi/bankong-v1.3.0.yaml --ci
       - name: Test OpenAPI Spec
         run: inso run test uts_145cb5 --env localdev --ci
+      - name: Create OpenAPI Specification From Insomnia
+        run: inso export spec spc_ca6fc --output openapi/bankong-openapi.yaml --ci
       - name: Generate Kong declarative configuration from Spec
-        run: inso generate config ./openapi/bankong-v1.3.0.yaml --type declarative > kong2.x.yaml
+        run: inso generate config openapi/bankong-openapi.yaml --type declarative > bankong-deck2.x.yaml
       - name: Convert configuration for 3.0
-        run: deck convert --from kong-gateway-2.x --to kong-gateway-3.x --input-file kong2.x.yaml --output-file kong3.x.yaml
+        run: deck convert --from kong-gateway-2.x --to kong-gateway-3.x --input-file bankong-deck2.x.yaml --output-file bankong-deck3.x.yaml
       - name: Validate Kong declarative configuration
-        run: deck validate -s kong3.x.yaml
+        run: deck validate -s bankong-deck3.x.yaml
+
+
+
+      # - name: Checkout
+      #   uses: actions/checkout@v2
+      # - name: Lint OpenAPI Specification
+      #   run: inso lint spec openapi/bankong-v1.3.0.yaml --ci
+      # - name: Test OpenAPI Spec
+      #   run: inso run test uts_145cb5 --env localdev --ci
+      # - name: Generate Kong declarative configuration from Spec
+      #   run: inso generate config ./openapi/bankong-v1.3.0.yaml --type declarative > kong2.x.yaml
+      # - name: Convert configuration for 3.0
+      #   run: deck convert --from kong-gateway-2.x --to kong-gateway-3.x --input-file kong2.x.yaml --output-file kong3.x.yaml
+      # - name: Validate Kong declarative configuration
+      #   run: deck validate -s kong3.x.yaml

@@ -3,12 +3,12 @@ type: ApiSpec
 parentId: wrk_3bb7d2cce8874df1acc63b859f801136
 modified: 1687785692961
 created: 1671035425455
-fileName: Transactions API of BanKonG 1.2.0
+fileName: Transactions API of BanKonG 1.3.0
 contents: >+
   openapi: 3.0.2
 
   info:
-    version: 1.2.0
+    version: 1.3.0
     contact: 
       email: learn@konghq.com
     title: Transactions API of BanKonG
