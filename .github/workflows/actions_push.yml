@@ -3,7 +3,7 @@ name: Apply generated configuration to local Kong gateway and update API documen
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy_to_kong:
