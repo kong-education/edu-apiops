@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Generate Kong declarative configuration from Spec
-        run: inso generate config ./openapi/orders.yaml --type declarative > kong2.x.yaml
+        run: inso generate config ./openapi/bankong-v1.3.0.yaml --type declarative > kong2.x.yaml
       - name: Convert configuration for 3.0
         run: deck convert --from kong-gateway-2.x --to kong-gateway-3.x --input-file kong2.x.yaml --output-file kong3-b.x.yaml
       - name: fix temporary regex issue 
@@ -23,4 +23,4 @@ jobs:
       - name: Deploy declarative config
         run: deck sync -s kong3.x.yaml
       - name: Publish Spec to Dev Portal
-        run: cd ./openapi && http --check-status --ignore-stdin PUT :8001/default/files/specs/orders.yaml contents=@orders.yaml
+        run: cd ./openapi && http --check-status --ignore-stdin PUT :8001/default/files/specs/bankong-v1.3.0.yaml contents=@bankong-v1.3.0.yaml

@@ -17,7 +17,7 @@ jobs:
       - name: Test OpenAPI Spec
         run: inso run test uts_145cb5 --env localdev --ci
       - name: Generate Kong declarative configuration from Spec
-        run: inso generate config ./openapi/orders.yaml --type declarative > kong2.x.yaml
+        run: inso generate config ./openapi/bankong-v1.3.0.yaml --type declarative > kong2.x.yaml
       - name: Convert configuration for 3.0
         run: deck convert --from kong-gateway-2.x --to kong-gateway-3.x --input-file kong2.x.yaml --output-file kong3.x.yaml
       - name: Validate Kong declarative configuration
