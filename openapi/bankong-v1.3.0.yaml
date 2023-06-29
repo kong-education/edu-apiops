@@ -7,11 +7,11 @@ info:
   description: | 
     This API provides you access to the transactions of a logged in user. You can get, create, change and delete transactions (of course always depending on permissions).
    
-  servers: 
-    - url: http://backend-transactions.bankong:3000
-      description: local sandbox environment  
-    # - url: http://localhost:3000
-    #   description: local sandbox environment  
+servers: 
+  - url: http://backend-transactions.bankong:3000
+    description: local sandbox environment  
+  # - url: http://localhost:3000
+  #   description: local sandbox environment  
     # - url: http://bankong.service-connectivity.com/api/v1
     #   description: production on multi-zone-mesh system
     # - url: http://backend-transactions.bankong/api/v1
