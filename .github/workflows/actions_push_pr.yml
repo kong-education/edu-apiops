@@ -15,7 +15,7 @@ jobs:
       - name: Lint OpenAPI Specification
         run: inso lint spec openapi/bankong-v1.3.0.yaml --ci
       - name: Test OpenAPI Spec
-        run: inso run test uts_145cb5 --env localdev --ci
+        run: inso run test uts_97298 --env localdev --ci
       - name: Create OpenAPI Specification From Insomnia
         run: inso export spec spc_ca6fc --output openapi/bankong-openapi.yaml --ci
       - name: Generate Kong declarative configuration from Spec
