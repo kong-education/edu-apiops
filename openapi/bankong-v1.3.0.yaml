@@ -10,10 +10,10 @@ info:
 servers: 
   - url: http://localhost:3000
     description: local sandbox environment  
-#   - url: http://bankong.service-connectivity.com/api/v1
-#     description: production on multi-zone-mesh system
-#   - url: http://backend-transactions.bankong/api/v1
-#     description: Lab environment
+  #   - url: http://bankong.service-connectivity.com/api/v1
+  #     description: production on multi-zone-mesh system
+  #   - url: http://backend-transactions.bankong/api/v1
+  #     description: Lab environment
   # - url: http://backend-transactions.bankong:3000/api/v1
   #   description: local sandbox environment  
   

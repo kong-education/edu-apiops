@@ -15,8 +15,6 @@ contents: >-
     description: | 
       This API provides you access to the transactions of a logged in user. You can get, create, change and delete transactions (of course always depending on permissions).
 
-
-     
   servers: 
     - url: http://localhost:3000
       description: local sandbox environment  
@@ -26,13 +24,6 @@ contents: >-
     #     description: Lab environment
     # - url: http://backend-transactions.bankong:3000/api/v1
     #   description: local sandbox environment  
-
-
-    
-  security:
-    - ApiKeyAuth: [] 
-    - OIDC: []
-
 
   paths:
     /transactions:
@@ -195,17 +186,7 @@ contents: >-
             description: "Description that may be available for the statement fee."
             minLength: 0
             maxLength: 128
-    securitySchemes:
-      ApiKeyAuth:
-        type: apiKey
-        in: header
-        name: apikey
-      OIDC:            
-        type: http
-        scheme: bearer
-        bearerFormat: JWT
   tags:
-
   - name: Transactions
     description: A tag
 contentType: yaml
