@@ -22,8 +22,8 @@ jobs:
         run: deck validate -s bankong-deck.yaml
       - name: Deploy declarative config
         run: deck sync -s bankong-deck.yaml
-#      - name: Publish Spec to Dev Portal
-#       run: cd ./openapi && http --check-status --ignore-stdin PUT :8001/default/files/specs/bankong-v1.3.0.yaml contents=@bankong-openapi-v1.3.1.yaml
+      - name: Publish Spec to Dev Portal
+        run: cd ./openapi && http --check-status --ignore-stdin PUT :8001/default/files/specs/bankong-v1.3.0.yaml contents=@bankong-v1.3.0.yaml
 
 
         
