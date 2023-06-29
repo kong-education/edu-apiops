@@ -13,14 +13,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Generate Kong declarative configuration from Spec
-        run: inso generate config ./openapi/bankong-v1.3.0.yaml --type declarative > kong2.x.yaml
+        run: inso generate config openapi/bankong-openapi-v1.3.1.yaml --type declarative > bankong-deck2.x.yaml
       - name: Convert configuration for 3.0
-        run: deck convert --from kong-gateway-2.x --to kong-gateway-3.x --input-file kong2.x.yaml --output-file kong3-b.x.yaml
+        run: deck convert --from kong-gateway-2.x --to kong-gateway-3.x --input-file bankong-deck2.x.yaml --output-file bankong-deck3.x.yaml
       - name: fix temporary regex issue 
-        run: sed 's/\\//' kong3-b.x.yaml > kong3.x.yaml
+        run: sed 's/\\//' bankong-deck3.x.yaml > bankong-deck.yaml
       - name: Validate Kong declarative configuration
-        run: deck validate -s kong3.x.yaml
+        run: deck validate -s bankong-deck.yaml
       - name: Deploy declarative config
-        run: deck sync -s kong3.x.yaml
+        run: deck sync -s bankong-deck.yaml
 #      - name: Publish Spec to Dev Portal
-#       run: cd ./openapi && http --check-status --ignore-stdin PUT :8001/default/files/specs/bankong-v1.3.0.yaml contents=@bankong-v1.3.0.yaml
+#       run: cd ./openapi && http --check-status --ignore-stdin PUT :8001/default/files/specs/bankong-v1.3.0.yaml contents=@bankong-openapi-v1.3.1.yaml
+
+
+        
+
+
+
+
+
