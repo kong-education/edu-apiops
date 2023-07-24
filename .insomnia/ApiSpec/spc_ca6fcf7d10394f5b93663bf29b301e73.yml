@@ -29,7 +29,7 @@ contents: >-
 
   paths:
     /transactions:
-      get:
+    get:
         description: Lists all transactions
         summary: List all transactions
         tags: 
