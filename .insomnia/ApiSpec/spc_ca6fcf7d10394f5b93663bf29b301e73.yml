@@ -188,7 +188,7 @@ contents: >-
             description: "Description that may be available for the statement fee."
             minLength: 0
             maxLength: 128
-tags:
-  - name: Transactions
-    description: A tag
+  tags:
+    - name: Transactions
+      description: A tag
 contentType: yaml
