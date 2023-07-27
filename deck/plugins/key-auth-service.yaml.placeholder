@@ -1,6 +1,5 @@
 plugins:
   - name: key-auth
-    service: Transactions_API_of_BanKonG
     config:
       key_names:
         - x-api-key
