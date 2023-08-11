@@ -49,8 +49,7 @@ configuration looks like.
 
 ### 2. Validating the Configuration
 
-The second step is to validate the configuration to ensure that it contains
-valid syntax, and that it is ready to applied to a Kong Gateway. 
+The second step is to validate the configuration to ensure that it contains valid syntax, and that it is ready to applied to a Kong Gateway. 
 
 To validate our generated configuration file, run:
 
