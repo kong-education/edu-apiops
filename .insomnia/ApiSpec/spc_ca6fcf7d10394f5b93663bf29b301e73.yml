@@ -1,7 +1,7 @@
 _id: spc_ca6fcf7d10394f5b93663bf29b301e73
 type: ApiSpec
 parentId: wrk_3bb7d2cce8874df1acc63b859f801136
-modified: 1688030221527
+modified: 1693325762973
 created: 1671035425455
 fileName: Transactions API of BanKonG 1.3.0
 contents: >-
@@ -13,7 +13,7 @@ contents: >-
       email: learn@konghq.com
     title: Transactions API of BanKonG
     description: | 
-      This API provides you access to the transactions of a logged in user. You can get, create, change and delete transactions (of course always depending on permissions).
+      This API provides you access to the transactions of a logged in user. You can get, create, change and delete transactions (of course always depending on permissions) .
 
   servers: 
     - url: http://backend-transactions.bankong:3000
