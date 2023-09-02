@@ -1,7 +1,7 @@
 _id: spc_ca6fcf7d10394f5b93663bf29b301e73
 type: ApiSpec
 parentId: wrk_3bb7d2cce8874df1acc63b859f801136
-modified: 1693659001657
+modified: 1693659272028
 created: 1671035425455
 fileName: Transactions API of BanKonG 1.3.0
 contents: >-
@@ -27,7 +27,7 @@ contents: >-
     # - url: http://backend-transactions.bankong:3000/api/v1
     #   description: local sandbox environment  
 
-  paths
+  paths:
     /transactions:
       get:
         description: Lists all transactions
