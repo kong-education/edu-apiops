@@ -1,9 +1,9 @@
-_id: req_e595bff6bf344d1eae98ae3b454fca4e
+_id: req_wrk_3bb7d2cce8874df1acc63b859f80113696c324be
 type: Request
-parentId: fld_27d4137e2fd34caa9cbf174d458b8861
-modified: 1687789710707
-created: 1687789710707
-url: "{{ _.base_url }}/transactions"
+parentId: wrk_3bb7d2cce8874df1acc63b859f801136
+modified: 1671035424365
+created: 1671035424365
+url: "{{ base_url }}/transactions"
 name: Create new transaction
 description: ""
 method: POST
@@ -14,9 +14,9 @@ headers: []
 authentication:
   type: apikey
   key: apikey
-  value: "{{ _.apikey }}"
+  value: "{{ apikey }}"
   addTo: header
-metaSortKey: -1687789710707
+metaSortKey: -1671035424365
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

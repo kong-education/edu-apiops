@@ -1,0 +1,10 @@
+_id: ut_74e89eb2cf6540eb93ddfc7f7772a798
+type: UnitTest
+parentId: uts_9729807abb1143879655f15c8341dec4
+modified: 1671036391923
+created: 1671036388774
+requestId: req_aff22b43eaaf44528d264b0b781cc445
+name: Patch Transaction Returns 200
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

@@ -1,9 +1,9 @@
-_id: req_61451122e5a84bb4a07efe609b061843
+_id: req_wrk_3bb7d2cce8874df1acc63b859f801136bac61fd8
 type: Request
-parentId: fld_27d4137e2fd34caa9cbf174d458b8861
-modified: 1687789710705
-created: 1687789710705
-url: "{{ _.base_url }}/transactions"
+parentId: wrk_3bb7d2cce8874df1acc63b859f801136
+modified: 1671035424369
+created: 1671035424369
+url: "{{ base_url }}/transactions"
 name: List all transactions
 description: ""
 method: GET
@@ -13,9 +13,9 @@ headers: []
 authentication:
   type: apikey
   key: apikey
-  value: "{{ _.apikey }}"
+  value: "{{ apikey }}"
   addTo: header
-metaSortKey: -1687789710705
+metaSortKey: -1671035424369
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
