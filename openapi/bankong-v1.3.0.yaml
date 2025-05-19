@@ -1,9 +1,9 @@
 openapi: 3.0.2
 info:
-  version: 1.3.0
+  version: 1.3.1
   contact: 
     email: learn@konghq.com
-  title: Transactions API of BanKonG
+  title: Transactions API of BanKonG v1.3.1
   description: | 
     This API provides you access to the transactions of a logged in user. You can get, create, change and delete transactions (of course always depending on permissions).
    
