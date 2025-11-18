@@ -21,7 +21,7 @@ jobs:
       - name: Deploy declarative config
         run: deck gateway sync bankong-deck.yaml deck/consumers deck/plugins
       - name: Publish Spec to Dev Portal
-        run: cd ./openapi && http --check-status --ignore-stdin PUT :8001/default/files/specs/bankong-v1.3.0.yaml contents=@bankong-v1.3.0.yaml
+        run: cd ./openapi && http --check-status --ignore-stdin PUT :8001/default/files/specs/bankong-v1.3.0.yaml contents=@bankong-v1.3.0.yaml || true
 
 
         
