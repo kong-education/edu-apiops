@@ -13,11 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Lint OpenAPI Specification
-        run: inso lint spec openapi/bankong-v1.3.0.yaml --ci
+        run: inso lint spec openapi/bankong-v1.3.0.yaml --ci -w .
       - name: Test OpenAPI Spec
-        run: inso run test uts_97298 --env localdev --ci
+        run: inso run test uts_97298 --env localdev --ci -w .
       - name: Create OpenAPI Specification From Insomnia
-        run: inso export spec spc_ca6fc --output openapi/bankong-openapi.yaml --ci
+        run: inso export spec spc_ca6fc --output openapi/bankong-openapi.yaml --ci -w.
       - name: Generate Kong declarative configuration from Spec
         run: deck file openapi2kong --spec openapi/bankong-openapi.yaml --output-file bangkong-deck3.x.yaml
       - name: Validate Kong declarative configuration
