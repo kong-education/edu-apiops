@@ -19,6 +19,6 @@ jobs:
       - name: Create OpenAPI Specification From Insomnia
         run: inso export spec spc_ca6fc --output openapi/bankong-openapi.yaml --ci -w.
       - name: Generate Kong declarative configuration from Spec
-        run: deck file openapi2kong --spec openapi/bankong-openapi.yaml --output-file bangkong-deck3.x.yaml
+        run: deck file openapi2kong --spec openapi/bankong-openapi.yaml --output-file bankong-deck3.x.yaml
       - name: Validate Kong declarative configuration
         run: deck gateway validate bankong-deck3.x.yaml
